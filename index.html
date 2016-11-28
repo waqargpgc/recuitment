@@ -93,7 +93,7 @@
     }
     
     .jswelcom-page .links {
-        margin: 40px 0 100px 0;
+        margin: 30px 0 100px 0;
         text-align: center;
     }
     
@@ -102,7 +102,7 @@
     }
     .page-4{
         height: 100%;
-        background-image: url(assets/images/code-man.jpg);
+        background-image: url(assets/images/coworkers.jpg);
         background-size: cover;
     }
     /*---------------- style for input, fields, divs, icons and heading---------------------*/
@@ -114,47 +114,32 @@
         padding-bottom: 20px;
     }
     
-    .r-form h2 {
+    .r-form h4 {
         border-bottom: 1px solid gray;
         margin-left: 20px;
         margin-right: 20px;
+        font-size: 1em;
     }
     
-    .r-form form {}
-    
     .r-form label,
-    h2 {
+    h4 {
         font-family: "Pompiere", "Helvetica Neue", sans-serif;
     }
     
     .r-form input {
         font-size: 1em;
-        width: 75%;
+        width: 97%;
         height: 36px;
         font-family: arial;
         border: 1px solid gray;
         border-radius: 5px;
-        margin: 10px;
+        margin: 10px 0;
         box-shadow: inset 2px 3px 23px rgba(0, 0, 0, .1);
         padding: 0 0 0 30px;
     }
     
     .r-form input:focus {
         outline: none;
-    }
-    
-    .r-form .sign {
-        display: inline-block;
-        width: 50%;
-        height: 40px;
-        line-height: 40px;
-        background-color: #016ABC;
-        text-decoration: none;
-        font-family: "Helvetica Neue";
-        font-size: 1.2em;
-        border-radius: 6px;
-        font-weight: 600;
-        color: white;
     }
     
     .r-form p a {
@@ -164,20 +149,20 @@
     .feld span {
         position: absolute;
         margin-left: 2%;
-        margin-top: -36px;
+        margin-top: -40px;
     }
     
     .feld .ph {
         position: absolute;
-        margin-left: -12%;
-        margin-top: -36px;
+        margin-left: -27.5%;
+        margin-top: -40px;
     }
     /*---------------- style for input, fields, divs, icons and heading---------------------*/
     /* ---------------------sical icon style------------------------*/
     /*----------------gerneral style zocial icons---------------------*/
     
     .zocial {
-        width: 75%;
+        width: 97%;
         height: 36px;
         line-height: 36px;
         color: #fff;
@@ -278,6 +263,51 @@
             margin-top: -36px;
         }
     }
+    .sign-form{
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            padding-bottom: 5px;
+          
+        }
+        .sign-form h4{
+            border-bottom: 1px solid gray;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 1em;
+        }
+        .sign-form label,
+    h4 {
+        font-family: "Pompiere", "Helvetica Neue", sans-serif;
+    }
+        .sign-form input{
+            font-size: 1em;
+            width: 97%;
+            height: 40px;
+            font-family: arial;
+            border: 1px solid gray;
+            border-radius: 6px;
+            margin:6px 0;
+            box-shadow:inset 2px 3px 23px rgba(0,0,0, .1);
+            padding:0 0 0 40px;
+            
+        }
+        .sign-form input:focus{
+            outline: none;
+        }
+
+        .sign-form p a{
+        margin: auto;
+        }
+        .icon {
+    position: absolute;
+    margin-left: 1.5%;
+    margin-top: -36px;}
+       
+         .ph{
+            margin-left: -17%;
+        }
+
 </style>
 
 <head>
@@ -361,11 +391,11 @@
                                     <button id='search-button' type='submit'><span>Search</span></button>
                                 </form>
                             </div>
-                            <div class="mbr-section-btn"><a class="btn btn-lg btn-white btn-white-outline" href="#">I Am An Employer
+                            <div class="mbr-section-btn"><a class="btn btn-lg btn-white btn-white-outline" href="#"data-toggle="modal" data-target="#modal1">I Am An Employer
 </a>
-                                <a class="btn btn-lg btn-white btn-white-outline" href="#">I Am A Jobseeker
+                                <a class="btn btn-lg btn-white btn-white-outline" href="#" data-toggle="modal" data-target="#modal1">I Am A Jobseeker
 </a>
-                                <a class="btn btn-lg btn-white btn-white-outline" href="#">I Am A Recuriter
+                                <a class="btn btn-lg btn-white btn-white-outline" href="#"data-toggle="modal" data-target="#modal1">I Am A Recuriter
 
 </a>
 
@@ -398,8 +428,8 @@
                     </div>
                     <div class="col-sm-3 text-xs-center">
                         <span class="round">3</span>
-                        <h3>Interviews Schedule</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                        <h3>Interviews</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
                     <div class="col-sm-3 text-xs-center">
                         <span class="round">4</span>
@@ -410,9 +440,9 @@
                 </div>
                 <!-- row end -->
                 <div class="links">
-                    <a class="btn btn-primary" href="#" style="padding:12px 120px;">Let's Get Started</a>
-                    <p style="margin:10px 0 5px 0;">
-                    Alrady a Member? &nbsp;<a href="#">Login Here</a>
+                    <a class="btn btn-primary" href="#"data-toggle="modal" data-target="#modal2" style="padding:12px 120px;">Let's Get Started</a>
+                    <p style="margin:0px 0 5px 0;">
+                    Alrady a Member? &nbsp;<a href="#"data-toggle="modal" data-target="#modal1">Login Here</a>
                 </p>
                 </div>
             </div>
@@ -448,9 +478,9 @@
             </div>
             <!-- row end -->
             <div class="links">
-                <a class="btn btn-primary" href="#" style="padding:12px 120px;">Let's Get Started</a>
-                <p style="margin:10px 0 5px 0;">
-                    Alrady a Member? &nbsp;<a href="#">Login Here</a>
+                <a class="btn btn-primary" href="#"data-toggle="modal" data-target="#modal2" style="padding:12px 120px;">Let's Get Started</a>
+                <p style="margin:0px 0 5px 0;">
+                    Alrady a Member? &nbsp;<a href="#"data-toggle="modal" data-target="#modal1">Login Here</a>
                 </p>
             </div>
 
@@ -460,36 +490,69 @@
     </div>
 
 
-    <div class="modal fade" id="modal1" id="" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal fade bd-example-modal-sm" id="modal1" id="" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
             <div class="modal-content modal-popup">
                 <a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
                 <div action="" class="r-form popup-form">
                     <!--  social icons(zocial)-->
-                    <h2> Member Login Here Please</h2>
+                    <h4> Member Login Here Please</h4>
                     <a href="#" class="zocial facebook"><span>Sign in with Facebook</span></a>
                     <a href="#" class="zocial google"><span>Sign in with Google+</span></a>
                     <a href="#" class="zocial twitter"><span>Sign in with Twitter</span></a>
                     <a href="#" class="zocial linkedin"><span>Sign in with LinkedIn</span></a>
-                    <h3>---OR---</h3>
+                    <h4>---OR---</h4>
                     <div class="feld">
                         <!--input fields and image icone in span-->
                         <from>
                             <input type="email" email="email" id="email" maxlength="100" placeholder="Plz enter your email" required />
                             <br>
-                            <span class="icon"><img src="../images/u2.png"></span>
+                            <span class="icon"><img src="assets/images/u2.png"></span>
 
                             <input type="password" name="pass" id="pass" maxlength="100" placeholder="Plz enter password" required />
                             <br>
-                            <span class="ph"><img src="../images/p2.png"></span>
+                            <span class="ph"><img src="assets/images/p2.png"></span>
                         </from>
-                        <a class="sign" href="login.html">Login</a>
-                        <p>If You Want To Create Account? <a href="#">Sign Up Here</a> </p>
+                        <a class="btn btn-primary" href="login.html">Login</a>
+                        <p>If You Want To Create Account?<br> <a href="#"data-toggle="modal" data-target="#modal2">Sign Up Here</a> </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <div class="modal fade bd-example-modal-sm" id="modal2" id="" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content modal-popup">
+                <a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
+                <div action="" class="sign-form popup-form">
+        <h4>New Member Sign Up Here Please</h4>
+        <a href="#" class="zocial facebook"><span>Sign in with Facebook</span></a>
+        <a href="#" class="zocial google"><span>Sign in with Google+</span></a>
+        <a href="#" class="zocial twitter"><span>Sign in with Twitter</span></a>
+        <a href="#" class="zocial linkedin"><span>Sign in with LinkedIn</span></a>
+        <h4>---OR---</h4>
+        <input type="email" email="email" id="email" maxlength="100" placeholder="Plz enter your email" required /><br>
+        <span class="icon"><img src="assets/images/m2.png"></span>
+ 
+        <input type="password" name="pass" id="pass" maxlength="100" placeholder="Plz enter password" required /><br>
+        <span class="icon"><img src="assets/images/p2.png"></span>
+    
+        <input type="text" name="name" id="name" maxlength="100" placeholder="Plz enter your first name" required /><br>
+        <span class="icon"><img src="assets/images/u2.png"></span>
+   
+        <input type="text" name="name" id="name" maxlength="100" placeholder="Plz enter your last name" required /><br>
+        <span class="icon"><img src="assets/images/u2.png"></span>
+  
+        <input type="tel" name="name" id="name"maxlength="100" placeholder="Plz enter yor phone No#" required /><br>
+        <span class="ph icon"><img src="assets/images/ph2.png" ></span>
+        
+        <a class="btn btn-primary" href="#">Sign Up Now</a>
+        <p>If You Have Alrady Account?<br><a href="#"data-toggle="modal" data-target="#modal1">Login Here</a> </p>
+    </div>
+     </div>
+                </div>
+            </div>
     
     <div class="page-4" id="page-4"> 
     <h1 class="mbr-section-title text-xs-center display-2" style="padding:100px 0 50px 0; color:white">The Recuriter Section Will Be Avaible Soon</h1>
